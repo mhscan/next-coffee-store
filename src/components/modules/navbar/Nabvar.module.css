@@ -1,6 +1,7 @@
 .navbar main,
 .navbar_fixed main {
-  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  background: #2f1e16;
   transition: background-color 0.2s ease;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
   color: black;
@@ -15,6 +16,9 @@
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   justify-content: space-between;
+}
+.logo {
+  width: 70px;
 }
 .navbar:before {
   content: "";
@@ -33,7 +37,7 @@
   left: 0;
   width: 100%;
   top: 0;
-  background: white;
+  background: #2f1e16;
   z-index: 999;
 }
 @keyframes fadeInDownBig {
@@ -60,7 +64,7 @@
   font-size: 14px;
   font-weight: 500;
   font-family: "shabnam", Arial, Helvetica, sans-serif;
-  color: rgb(52, 24, 14);
+  color: #fff;
   white-space: nowrap;
 }
 

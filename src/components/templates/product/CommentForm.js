@@ -7,30 +7,30 @@ const CommentForm = ({ productID }) => {
   const [email, setEmail] = useState("");
   const [body, setBody] = useState("");
   const [score, setScore] = useState(5);
-  const [isSaveUserInfo, setIsSaveUserInfo] = useState(false);
+ // const [isSaveUserInfo, setIsSaveUserInfo] = useState(false);
 
   const setCommentScore = (score) => {
     setScore(score);
     showSwal("امتیاز شما با موفقیت ثبت شد", "success", "ادامه ثبت کامنت");
   };
 
-  useEffect(() => {
-    const userInfo = JSON.parse(localStorage.getItem("userInfo"));
-    setUsername(userInfo.username);
-    setEmail(userInfo.email);
-  }, []);
+  // useEffect(() => {
+  //   const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+  //   setUsername(userInfo.username);
+  //   setEmail(userInfo.email);
+  // }, []);
 
   const submitComment = async () => {
     // Validation (You)
 
-    if (isSaveUserInfo) {
-      const userInfo = {
-        username,
-        email,
-      };
+    // if (isSaveUserInfo) {
+    //   const userInfo = {
+    //     username,
+    //     email,
+    //   };
 
-      localStorage.setItem("userInfo", JSON.stringify(userInfo));
-    }
+    //   localStorage.setItem("userInfo", JSON.stringify(userInfo));
+    // }
 
     const comment = {
       username,
@@ -110,7 +110,7 @@ const CommentForm = ({ productID }) => {
           />
         </div>
       </div>
-      <div className={styles.checkbox}>
+      {/* <div className={styles.checkbox}>
         <input
           type="checkbox"
           value={isSaveUserInfo}
@@ -121,7 +121,7 @@ const CommentForm = ({ productID }) => {
           ذخیره نام، ایمیل و وبسایت من در مرورگر برای زمانی که دوباره دیدگاهی
           می‌نویسم.
         </p>
-      </div>
+      </div> */}
       <button onClick={submitComment}>ثبت</button>
     </div>
   );

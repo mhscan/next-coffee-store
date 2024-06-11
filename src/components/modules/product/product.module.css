@@ -20,9 +20,7 @@
 .details div {
   direction: ltr;
 }
-.details_container:hover img {
-  transform: scale(1.1);
-}
+ 
 .details_container img {
   transition: 0.4s all ease-in;
 }
@@ -50,7 +48,7 @@
   transition: opacity 0.3s ease;
 }
 .details_container:hover::before {
-  opacity: 1;
+  opacity: 0;
 }
 .details_container:hover button {
   visibility: visible;
@@ -118,5 +116,5 @@
 
 .icons a:hover .tooltip,
 .icons div:hover .tooltip {
-  opacity: 1;
+  opacity: 0;
 }

@@ -2,7 +2,7 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import styles from "./banner.module.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 
 function Banner() {
-  return (
+  return (<div className={styles.divv}>
     <Swiper
       rewind={true}
       navigation={true}
@@ -21,24 +21,24 @@ function Banner() {
       className="mySwiper home-slider"
     >
       <SwiperSlide>
-        <img
-          src="https://set-coffee.com/wp-content/uploads/2023/12/slide.jpg"
-          alt="Slide"
-        />
+        <img className={styles.image} src='/images/1.jpg' alt='Slide' />
+      </SwiperSlide>
+      {/* <SwiperSlide>
+        <img className={styles.image} src='/images/2.jpg' alt='Slide' />
+      </SwiperSlide> */}
+      <SwiperSlide>
+        <img className={styles.image} src='/images/3.jpg' alt='Slide' />
       </SwiperSlide>
       <SwiperSlide>
-        <img
-          src="https://set-coffee.com/wp-content/uploads/2021/10/winter-slie.jpg"
-          alt="Slide"
-        />
+        <img className={styles.image} src='/images/4.jpg' alt='Slide' />
       </SwiperSlide>
       <SwiperSlide>
-        <img
-          src="https://set-coffee.com/wp-content/uploads/2022/06/fall.jpg"
-          alt="Slide"
-        />
+        <img className={styles.image} src='/images/5.jpg' alt='Slide' />
       </SwiperSlide>
-    </Swiper>
+      <SwiperSlide>
+        <img className={styles.image} src='/images/6.jpg' alt='Slide' />
+      </SwiperSlide>
+    </Swiper></div>
   );
 }
 

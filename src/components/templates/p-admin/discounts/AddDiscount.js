@@ -80,14 +80,14 @@ function AddDiscount() {
             type="text"
           />
         </div>
-        <div>
+        {/* <div>
           <label>محصول</label>
           <select name="" id="">
             <option value="">قهوه ترک</option>
             <option value="">قهوه عربیکا</option>
             <option value="">قهوه اسپرسو</option>
           </select>
-        </div>
+        </div> */}
       </div>
       <button onClick={addDiscount}>افزودن</button>
     </section>

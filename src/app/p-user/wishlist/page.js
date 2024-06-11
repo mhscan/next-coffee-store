@@ -27,6 +27,8 @@ const page = async () => {
                 name={wish.product.name}
                 price={wish.product.price}
                 score={wish.product.score}
+                img={wish.product.img}
+
               />
             ))}
         </div>

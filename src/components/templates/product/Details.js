@@ -10,8 +10,8 @@ import AddToWishlist from "./AddToWishlist";
 import { useState } from "react";
 import { showSwal } from "@/utils/helpers";
 
-// ❌ async
 const Details = ({ product }) => {
+  console.log("Details  product:", product)
   const [count, setCount] = useState(1);
 
   const addToCart = () => {
@@ -79,10 +79,10 @@ const Details = ({ product }) => {
 
       <hr />
 
-      <div className={styles.Available}>
+      {/* <div className={styles.Available}>
         <IoCheckmark />
         <p>موجود در انبار</p>
-      </div>
+      </div> */}
 
       <div className={styles.cart}>
         <button onClick={addToCart}>افزودن به سبد خرید</button>
@@ -95,10 +95,10 @@ const Details = ({ product }) => {
 
       <section className={styles.wishlist}>
         <AddToWishlist productID={product._id} />
-        <div>
+        {/* <div>
           <TbSwitch3 />
           <a href="/">مقایسه</a>
-        </div>
+        </div> */}
       </section>
 
       <hr />
@@ -112,7 +112,7 @@ const Details = ({ product }) => {
         </p>
       </div>
 
-      <div className={styles.share}>
+      {/* <div className={styles.share}>
         <p>به اشتراک گذاری: </p>
         <a href="/">
           <FaTelegram />
@@ -129,7 +129,7 @@ const Details = ({ product }) => {
         <a href="/">
           <FaFacebookF />
         </a>
-      </div>
+      </div> */}
 
       <hr />
     </main>

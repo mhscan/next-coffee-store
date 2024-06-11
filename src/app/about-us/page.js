@@ -10,7 +10,7 @@ const page = async () => {
     <>
       <Navbar isLogin={user ? true : false} />
       <Breadcrumb route={"درباره ما"} />
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         <section>
           <div>
             <span>درباره ما</span>
@@ -71,7 +71,7 @@ const page = async () => {
             </p>
           </div>
         </main>
-      </div>
+      </div> */}
 
       <Footer />
     </>

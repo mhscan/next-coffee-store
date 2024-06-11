@@ -6,6 +6,7 @@ import Description from "./Description";
 import MoreInfoes from "./MoreInfoes";
 import Comments from "./Comments";
 const Tabs = ({ product }) => {
+ 
   const [tab, setTab] = useState("description");
 
   return (
@@ -41,7 +42,7 @@ const Tabs = ({ product }) => {
 
         <div className={styles.contents}>
           <section>
-            {tab === "description" && <Description />}
+          {tab === "description" && <Description product={JSON.parse(JSON.stringify(product))}/>}
             {tab == "moreInfoes" && (
               <MoreInfoes product={JSON.parse(JSON.stringify(product))} />
             )}

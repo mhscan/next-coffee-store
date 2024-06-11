@@ -6,8 +6,8 @@ const Topbar = () => {
       <div className={styles.topbar}>
         <div className={styles.profile}>
           <div>
-            <p>شاهین مشکل گشا</p>
-            <span>ادمین</span>
+            <p>ادمین</p>
+        
           </div>
           <img src="/images/shahin.jpg" alt="" />
         </div>

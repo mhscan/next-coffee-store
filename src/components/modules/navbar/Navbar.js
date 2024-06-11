@@ -28,7 +28,7 @@ function Navbar({ isLogin }) {
       <main>
         <div>
           <Link href="/">
-            <img src="/images/logo.png" alt="Logo" />
+          <img className={styles.logo} src="/images/logo.png" alt="Logo" />
           </Link>
         </div>
 
@@ -79,11 +79,11 @@ function Navbar({ isLogin }) {
         <div className={styles.navbar_icons}>
           <Link href="/cart">
             <FaShoppingCart />
-            <span>1</span>
+            {/* <span>1</span> */}
           </Link>
           <Link href="/wishlist">
             <FaRegHeart />
-            <span>1</span>
+            {/* <span>1</span> */}
           </Link>
         </div>
       </main>

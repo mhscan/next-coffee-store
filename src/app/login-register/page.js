@@ -22,8 +22,8 @@ const login_register = () => {
         )}
       </div>
       <section>
-        <img
-          src="https://neurosciencenews.com/files/2023/06/coffee-brain-caffeine-neuroscincces.jpg"
+      <img
+          src="/images/loginPic.jpg"
           alt=""
         />
       </section>

@@ -66,11 +66,11 @@ export default function DataTable({ comments, title }) {
               <th>کاربر</th>
               <th>ایمیل</th>
               <th>امتیاز</th>
-              <th>محصول</th>
+              {/* <th>محصول</th> */}
               <th>تاریخ ثبت</th>
               <th>مشاهده</th>
-              <th>ویرایش</th>
-              <th>حذف</th>
+              {/* <th>ویرایش</th> */}
+              {/* <th>حذف</th> */}
               <th>تایید / رد</th>
               <th>پاسخ</th>
               <th>بن</th>
@@ -87,7 +87,7 @@ export default function DataTable({ comments, title }) {
                 <td>{comment.username}</td>
                 <td>{comment.email}</td>
                 <td>{comment.score}</td>
-                <td>{comment.productID.name}</td>
+                {/* <td>{comment.productID.name}</td> */}
                 <td>{new Date(comment.date).toLocaleDateString("fa-IR")}</td>
                 <td>
                   <button
@@ -98,16 +98,16 @@ export default function DataTable({ comments, title }) {
                     مشاهده
                   </button>
                 </td>
-                <td>
+                {/* <td>
                   <button type="button" className={styles.edit_btn}>
                     ویرایش
                   </button>
-                </td>
-                <td>
+                </td> */}
+                {/* <td>
                   <button type="button" className={styles.delete_btn}>
                     حذف
                   </button>
-                </td>
+                </td> */}
                 <td>
                   {comment.isAccept ? (
                     <button

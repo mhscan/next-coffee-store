@@ -43,6 +43,7 @@ const Login = ({ showRegisterForm }) => {
     const data = await res.json();
 
     if (res.status === 200) {
+      router.replace("p-user");
       swal({
         title: "با موفقیت لاگین شدین",
         icon: "success",
@@ -76,10 +77,10 @@ const Login = ({ showRegisterForm }) => {
               onChange={(event) => setPassword(event.target.value)}
               placeholder="رمز عبور"
             />
-            <div className={styles.checkbox}>
+            {/* <div className={styles.checkbox}>
               <input type="checkbox" name="" id="" />
               <p>مرا به یاد داشته باش</p>
-            </div>
+            </div> */}
             <button className={styles.btn} onClick={loginWithPassword}>
               ورود
             </button>
