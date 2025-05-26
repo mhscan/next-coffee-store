@@ -59,7 +59,10 @@ function Navbar({ isLogin }) {
             <div className={styles.dropdown}>
               <Link href="/p-user">
                 <IoIosArrowDown className={styles.dropdown_icons} />
-                حساب کاربری
+                <p  style={{"color":"#fff"}}>
+                     حساب کاربری
+                </p>
+             
               </Link>
               <div className={styles.dropdown_content}>
                 <Link href="/p-user/orders">سفارشات</Link>
@@ -78,13 +81,10 @@ function Navbar({ isLogin }) {
 
         <div className={styles.navbar_icons}>
           <Link href="/cart">
-            <FaShoppingCart />
+            <FaShoppingCart color="white" />
             {/* <span>1</span> */}
           </Link>
-          <Link href="/wishlist">
-            <FaRegHeart />
-            {/* <span>1</span> */}
-          </Link>
+          
         </div>
       </main>
     </nav>

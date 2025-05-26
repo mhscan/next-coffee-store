@@ -22,9 +22,7 @@ export default function DataTable({ products, title }) {
               <th>نام</th>
               <th>قیمت</th>
               <th>امتیاز</th>
-              <th>مشاهده جزئیات</th>
-              <th>ویرایش</th>
-              <th>حذف</th>
+              
             </tr>
           </thead>
           <tbody>
@@ -35,21 +33,7 @@ export default function DataTable({ products, title }) {
                 <td>{product.price.toLocaleString()}</td>
                 <td>{product.score}</td>
 
-                <td>
-                  <button type="button" className={styles.edit_btn}>
-                    مشاهده جزئیات
-                  </button>
-                </td>
-                <td>
-                  <button type="button" className={styles.edit_btn}>
-                    ویرایش
-                  </button>
-                </td>
-                <td>
-                  <button type="button" className={styles.delete_btn}>
-                    حذف
-                  </button>
-                </td>
+                
               </tr>
             ))}
           </tbody>

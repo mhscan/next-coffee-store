@@ -17,7 +17,7 @@ const Orders = () => {
       <Order />
       <Order />
 
-      <p className={styles.empty}>سفارشی ثبت نشده</p>
+      {/* <p className={styles.empty}>سفارشی ثبت نشده</p> */}
     </div>
   );
 };

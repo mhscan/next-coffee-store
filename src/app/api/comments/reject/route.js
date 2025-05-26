@@ -16,7 +16,7 @@ export async function PUT(req) {
         },
       }
     );
-    return Response.json({ message: "Comment accepted successfully :))" });
+    return Response.json({ message: "Comment reject successfully :))" });
   } catch (err) {
     return Response.json({ message: err }, { status: 500 });
   }

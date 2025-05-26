@@ -9,7 +9,7 @@ const Card = ({ name, price, img }) => {
   return (
     <div className={styles.card}>
       <div className={styles.details_container}>
-        <img src='/images/coffee.jpg' alt='' />
+        <img src={img} alt='' />
       </div>
 
       <div className={styles.details}>

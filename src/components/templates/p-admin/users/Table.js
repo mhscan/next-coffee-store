@@ -104,7 +104,7 @@ export default function DataTable({ users, title }) {
               <th>نام و نام خانوادگی</th>
               <th>ایمیل</th>
               <th>نقش</th>
-              <th>ویرایش</th>
+              
               <th>تغییر سطح</th>
               <th>حذف</th>
               <th>بن</th>
@@ -117,11 +117,7 @@ export default function DataTable({ users, title }) {
                 <td>{user.name}</td>
                 <td>{user.email ? user.email : "ایمیل یافت نشد"}</td>
                 <td>{user.role === "USER" ? "کاربر عادی" : "مدیر"}</td>
-                <td>
-                  <button type="button" className={styles.edit_btn}>
-                    ویرایش
-                  </button>
-                </td>
+                
                 <td>
                   <button
                     type="button"
